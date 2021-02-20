@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "c9052430-326a-4c2f-a592-a17b688b4c4a",
+		"name": "Coffee App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_machines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_machines",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_machines"
+					]
+				},
+				"description": "This request for getting all coffee machines"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_machines_by_type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_type\": \"COFFEE_MACHINE_LARGE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_machines_by_type",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_machines_by_type"
+					]
+				},
+				"description": "this request for getting all coffee machines by product type\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_machines_by_water_line",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"water_line_compatible\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_machines_by_water_line",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_machines_by_water_line"
+					]
+				},
+				"description": "get all coffee machines by water_line_compatible"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_pods",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_pods"
+					]
+				},
+				"description": "this request to get all coffee pods"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_pods_by_type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_type\": \"COFFEE_POD_LARGE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_pods_by_type",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_pods_by_type"
+					]
+				},
+				"description": "get all coffee pods filtered by product type"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_pods_by_flavor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"coffee_flavor\": \"COFFEE_FLAVOR_VANILLA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_pods_by_flavor",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_pods_by_flavor"
+					]
+				},
+				"description": "get all coffee pods filtered by coffee_flavor"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get_all_coffee_pods_by_pack_size",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pack_size\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_all_coffee_pods_by_pack_size",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_all_coffee_pods_by_pack_size"
+					]
+				},
+				"description": "get all coffee pods filtered by pack_size"
+			},
+			"response": []
+		}
+	]
+}
